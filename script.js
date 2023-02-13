@@ -8,16 +8,13 @@ let plaNet="Earth";
 console.log(plaNet)
 
 // Program Number 3
-let currentVisitor = prompt('Enter Your Name Please:');
-alert('Welcome '+ currentVisitor)
+let currentVisitor = "visitor name";
 
 //Program Number 4
-let favDrink  =  String('fanta');
-console.log(favDrink , typeof favDrink)
+let favDrink  =  'fanta';
 
 // Program Number 5
-let favNum = Number(6);
-console.log(favNum , typeof favNum)
+let favNum = "6";
 
 // Program Number 6
  
