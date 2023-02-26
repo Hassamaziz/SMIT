@@ -1,84 +1,130 @@
-// Program Number 1
-let name="Umair Azmat";
-admin = name;
-alert(admin);
+// program 2 
 
-// Program Number 2
-let plaNet="Earth";
-console.log(plaNet)
+ console.log(5>4); //true
+ console.log('apple'>'pineapple'); //false
+console.log('2'>'12'); //true
+console.log(undefined == null); //true
+console.log(undefined === null); //false
+console.log(null == "\n0\n" ); //false
+console.log(null === +"\n0\n"); //false
 
-// Program Number 3
-let currentVisitor = "visitor name";
+// program number 3
+let Aa = 1;
+let b = 1;
+let c = ++Aa;
+let d = b++;
+console.log(Aa);
+console.log(b);
+console.log(c);
+console.log(d);
 
-//Program Number 4
-let favDrink  =  'fanta';
+// program 4
+let A = 2;
+let x = 1+(A *= 2);
+console.log(A);
+console.log(x);
 
-// Program Number 5
-let favNum = "6";
+// program 5
+// in the prompt line there should be a constraints added of Number or ParseInt
+ let num1 = Number(prompt('first number' ,1));
+ let num2 = Number(prompt('second number', 2));
+ alert(num1+num2);
 
-// Program Number 6
- 
+// program 6
 
-// Program Number 7
-    const person={
-        naMe :'umair',
-        age : 20,
-    }  
-    console.log(person);
+let aA=1;
+bB=2;
+(aA + bB < 4) ? console.log('below'): console.log('over');
 
+//program 7
 
-// program number 8
-let a,b,sum;
-a=10;
-b=5;
-sum = a+b;
-console.log('sum of A and B is' ,sum ); 
+let logIn = prompt('enter login');
 
-// Program Number 9
-let no1,no2,reSult;
-no1=20;
-no2=5;
-reSult=20/5;
-console.log('Result of Program 9 =', reSult);
- 
-// Program Number 10
-let first,second,diVide;
-first=10; second=30;
-diVide=(first+second)/5;
-console.log('Result of program 10= ', diVide);
+(logIn == 'Employee')?
+console.log('Hello'):
+console.log('');
 
-// Program Number 11
-let C , F
-F=50;
-console.log('Tempurature in Celsius:' , (F-32)*5/9,'°' );
+(logIn == 'Director')?
+console.log('Greetings'):
+console.log('');
 
-// Program Number 12
-const num1 = Number (prompt('Enter First Number'));
-const num2 = Number (prompt('Enter second Number'));
+(logIn == '')?
+console.log('No login'):
+console.log('');
 
-alert(num1+num2 );
+// program 8
+alert(null || 2 || undefined); // 2 = output
 
-//Program Number 13
-const Num1 = Number (prompt('Enter First Number'));
-const Num2 = Number (prompt('Enter second Number'));
-console.log('Difference is ', Num1-Num2);
+// program 9
+alert(alert(1)||2||alert(3)); // 1 and 2 output
 
-// Program Number 14
-const firstNum = Number (prompt('Enter First Number'));
-const secondNum = Number (prompt('Enter second Number'));
-alert(firstNum*secondNum);
+// program 10
+alert(1 && null && 2); //null output
 
-// Program Number 15
-const No1 = Number(prompt('Enter first number '));
-const No2 = Number(prompt('Enter second number '));
-console.log('Quotient of Given Number:', No1/No2);
+//program 11
+alert(alert(1) && alert(2)); // 1 and undefined
 
-// Program Number 16
-const n1 = Number(prompt('Enter first number'));
-const n2 = Number(prompt('Enter second number'));
-["The Remainder Of given Numbers is " , n1%n2 ].forEach(alert);
+//program 12
+alert(null || 2 && 3 || 4); //3 output
+
+//program 13 if condition variant one
+let age = 13;
+if(age>=14 && age<= 94){
+    console.log("age is between 14 and 94");
+}
+else{
+    console.log('age is not beteen 14 and 94');
+}
+//program 13 variant two
+
+let aGe = 90;
+if (!(aGe >= 14 && aGe <= 94)) {
+  console.log('age is not between 14 to 94');
+}
 
 
+else{
+    console.log('age is between 14 to 94');
+}
 
+//program 14
 
+if( -1 || 0 ){
+    alert('first');   //will print
+}
 
+if(-1&&0){
+    alert('second'); //will not print
+}
+if(null||-1&&1){
+    alert('third'); //will print
+}
+
+//program 15
+
+let browSer = prompt('enter your browser');
+if(browSer=='Edge'){
+    alert('you have got the Edge!');
+}
+else if(browSer=='Chrome'||browSer=='Firefox'|| browSer=='Safari'||browSer=='Opera'){
+    alert('Okay we support these browsers too');
+}
+else{
+    alert('we hope that this page looks ok!');
+}
+
+//program 16
+let a = +prompt('a?', '');
+
+switch(a) {
+  case 0:
+    alert(0);
+    break;
+  case 1:
+    alert(1);
+    break;
+  case 2:
+  case 3:
+    alert('2,3');
+    break;
+}
